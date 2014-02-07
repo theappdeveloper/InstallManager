@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Install Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="jquery-mobile/styles/jquery.mobile-1.3.1.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="jquery-mobile/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+    
+   
+
+	<script type="text/javascript" src="js/viewdrawinglist.js"></script>
+
+	<title>Inscape App</title>
+
+    </head>
+	<body onload="init();">
+
+		<div id="viewDrawingListPage" data-role="page">
+
+			<div data-role="header">
+				<a href="#" class="nav" id="viewDrawingListBack">Back</a>
+				<h1>View Drawing</h1>
+			</div>
+
+			<div data-role="content">
+				<div id="info-btn">
+					<div id="userinfo">
+						<h3 id="fullName"></h3><h4 id="roleTitle"></h4>
+					</div>
+				</div>
+				
+				<div id="other-info">
+					<div id="left-f">
+						<label for="siteName">Site Name: </label>
+						<h4 id="siteName"></h4>
+					</div>
+					
+					<div id="right-f">
+						<label for="projectNum">Project No: </label>
+						<h4 id="projectNum"></h4>
+					</div>
+					
+					<div id="left-f">
+						<label for="roomRef">Room Ref: </label>
+						<h4 id="roomRef"></h4>
+					</div>
+				</div>
+				
+				<div id="wrapper">
+					<table data-role="table" id="fileList" data-mode="reflow" class="ui-responsive table-stroke">
+						<thead>
+							<tr>
+								<th class="col-file1" data-priority="1">No.</th>
+								<th class="col-file2" data-priority="2">Filename</th>
+								<th class="col-file3" data-priority="3">View</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>&copy; Inscape Interiors Ltd</h4>
+			</div>
+
+		</div>
+		
+		
+
+	</body>
+</html>
